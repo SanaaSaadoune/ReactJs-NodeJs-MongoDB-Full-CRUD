@@ -1,0 +1,30 @@
+{
+  "name": "project-react-traversy-media",
+  "version": "1.0.0",
+  "description": "Shopping list with mern stack",
+  "main": "server.js",
+  "scripts": {
+    "client-install": "npm install --prefix frontend",
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+
+  },
+  "author": "Sanaa Saadoune",
+  "license": "MIT",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.19.0",
+    "concurrently": "^6.0.0",
+    "cors": "^2.8.5",
+    "expres": "0.0.5",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.12.1",
+    "mongoose-unique-validator": "^2.0.3",
+    "winston": "^3.3.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
